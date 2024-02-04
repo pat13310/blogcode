@@ -32,5 +32,6 @@ class BodyBlock(StreamBlock):
     image= ImageTextBlock()
     quote= QuoteBlock()
     titleComment= TitleCommentBlock()
-    
+
+
     
