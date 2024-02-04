@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "runwag",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "manage.py",
+        "runserver"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "updatewag",
+      "type": "shell",
+      "command": "python manage.py makemigrations && python manage.py migrate",      
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

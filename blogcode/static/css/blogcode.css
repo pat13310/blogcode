@@ -1,0 +1,25 @@
+.intro-content p {
+    margin: 0.8rem 0;
+}
+
+.intro-content ul, li{
+    list-style: disc;
+    margin-left: 0.9rem;    
+}
+
+
+.wd-50{
+    width: 50%;
+}
+
+.wd-60{
+    width: 60%;
+}
+
+.wd-70{
+    width: 70%;
+}
+
+.wd-80{
+    width: 80%;
+}

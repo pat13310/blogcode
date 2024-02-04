@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+<div class="wd-60 mx-auto mt-5 border rounded-xl shadow-md py-5 px-8">
+    {% for item in page.gallery_images.all %}
+    <div class="bg-slate-200 flex justify-center items-center">
+        {% image item.image scale-13  %}        
+    </div>
+{% endfor %}
+    <h1 class="text-center text-3xl mt-6 mb-4  text-gray-700">{{ page.titre|richtext }}</h1>
+    <div class="text-justify text-gray-600 mb-3">{{ page.body|richtext }}</div>
+    <div class="text-lg text-gray-600 mt-1 my-3">{{ page.intro_title|richtext }}</div>
+    <div class="text-normal intro-content ml-1 text-md text-gray-600">{{ page.intro_content|richtext }}</div>
+</div>
+{% endblock %}

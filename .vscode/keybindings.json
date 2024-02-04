@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+R",
+    "command": "workbench.action.tasks.runTask",
+    "args": "runwag"
+  }
+]
