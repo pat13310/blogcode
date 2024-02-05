@@ -2,12 +2,12 @@
 
 {% load wagtailcore_tags %}
 {% block content %}
-<div class="wd-60 mt-2 mx-auto p-5 shadow rounded-lg">
-    <h1 class="text-xl text-gray-700 font-medium">{{ page.introduction|richtext }}</h1>
-    <form class="form-contact" action="{% pageurl page %}" method="POST">
+<div class="wd-60 mt-2 mx-auto  shadow rounded-lg">
+    <div class="flex content-center p-2 text-xl text-white bg-gray-700 font-medium"><span><i class='bx bx-envelope'></i>&nbsp;&nbsp;</span><span>{{ page.introduction|richtext }}</span></div>
+    <form class="p-5 form-contact" action="{% pageurl page %}" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button type =""submit class="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-900 hover:to-gray-700 text-white font-bold py-2 px-4 rounded">
             Envoyer
         </button>
     </form>

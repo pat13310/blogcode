@@ -35,13 +35,15 @@
 }
 
 .form-contact input, textarea{
-    border: 1px solid #444;
+    border: 1px solid #44444422;
     border-radius: 5px;
     width: 50%;
+    padding: 0.2rem 1rem;
+    align-content: center;
 }
 
 .form-contact label{
-    width: 6rem;
+    width: 6.5rem;
 }
 
 .form-contact button {
