@@ -2,7 +2,7 @@
     margin: 0.8rem 0;
 }
 
-.intro-content ul, li{
+.intro-content ul, .intro-content li{
     list-style: disc;
     margin-left: 0.9rem;    
 }
@@ -48,4 +48,10 @@
 
 .form-contact button {
     width: 100px;
+}
+
+
+ul, li{
+    list-style: none;
+
 }

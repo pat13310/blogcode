@@ -15,8 +15,7 @@ class FormField(AbstractFormField):
 
 class ContactPage(AbstractEmailForm):
     
-    introduction = RichTextField(blank=True)
-    
+    introduction = RichTextField(blank=True)    
     content_panels = AbstractEmailForm.content_panels + [
         FieldPanel('introduction'),
         InlinePanel('form_fields', label="Champs du Formulaire"),
